@@ -1,5 +1,12 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import siparImage from "@/assets/project-sipar.jpg";
 import booksImage from "@/assets/project-books.jpg";
 import coffeeImage from "@/assets/project-coffee.jpg";
@@ -52,50 +59,53 @@ const Projects = () => {
           Proyek <span className="gradient-text">Saya</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="glass-card rounded-lg overflow-hidden group hover:scale-105 transition-all duration-300 cursor-pointer"
-            >
-              <div className="relative overflow-hidden h-48">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <Button
-                    size="sm"
-                    className="bg-primary text-primary-foreground"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Lihat Detail
-                  </Button>
+        <Carousel className="w-full max-w-6xl mx-auto">
+          <CarouselContent>
+            {projects.map((project, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                <div className="glass-card rounded-lg overflow-hidden group hover:scale-105 transition-all duration-300 cursor-pointer mx-2">
+                  <div className="relative overflow-hidden h-80">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                      <Button
+                        size="sm"
+                        className="bg-primary text-primary-foreground"
+                      >
+                        <ExternalLink size={16} className="mr-2" />
+                        Lihat Detail
+                      </Button>
+                    </div>
+                  </div>
+                  
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2 text-foreground">
+                      {project.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 line-clamp-2">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full border border-primary/20"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-foreground">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 line-clamp-2">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full border border-primary/20"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
