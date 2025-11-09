@@ -17,7 +17,7 @@ const projects = [
   {
     title: "SIPAR – Sistem Informasi Peminjaman Ruangan",
     description:
-      "Aplikasi web berbasis PHP dan MySQL untuk mempermudah proses peminjaman serta pengelolaan data ruangan instansi.",
+      "Pada tahun 2024, selama menjalani magang di Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR), khususnya di Badan Pengembangan Sumber Daya Manusia (BPSDM), saya berkesempatan untuk mengembangkan Sistem Informasi Peminjaman Ruangan (SIPAR). Website ini dirancang untuk mempermudah proses peminjaman dan pengelolaan data ruangan di lingkungan instansi secara digital. Melalui SIPAR, pengguna dapat melakukan peminjaman ruangan dengan lebih efisien melalui fitur seperti login, registrasi, pencarian ruangan, serta manajemen data ruangan. Sistem ini juga dilengkapi dengan antarmuka yang responsif dan user friendly, sehingga dapat diakses dengan mudah oleh berbagai pengguna.",
     image: siparImage,
     tags: ["PHP", "MySQL", "Web App"],
   },
