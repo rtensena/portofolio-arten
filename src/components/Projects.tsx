@@ -14,9 +14,9 @@ const projects = [
     tags: ["PHP", "MySQL", "Web App"],
   },
   {
-    title: "Website Manajemen Buku",
+    title: "Unibookstore – Website Manajemen Buku",
     description:
-      "Website CRUD sederhana menggunakan HTML, CSS, JavaScript, dan MySQL.",
+      "Saya membuat website ini sebagai bagian dari pelatihan Web Development bersertifikasi BNSP (Badan Nasional Sertifikasi Profesi). Website ini berisi informasi mengenai berbagai sumber daya perpustakaan, salah satunya adalah daftar buku dari berbagai bidang yang dapat diakses oleh banyak pengguna. Fitur utama yang dikembangkan meliputi fungsi pencarian buku berdasarkan judul dan penulis untuk mempermudah proses pencarian, serta fitur manajemen buku bagi admin perpustakaan agar data buku tetap terbarui dan konsisten. Proyek ini menjadi salah satu implementasi dari kompetensi pengembangan web yang saya pelajari selama pelatihan.",
     image: booksImage,
     tags: ["HTML", "CSS", "JavaScript", "MySQL"],
   },
