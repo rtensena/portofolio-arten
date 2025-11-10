@@ -18,10 +18,10 @@ const About = () => {
           </h2>
           
           <div className="glass-card p-8 rounded-lg mb-8">
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+            <p className="text-lg text-foreground/90 leading-relaxed mb-6 text-justify">
               Saya adalah lulusan Informatika <span className="text-primary font-semibold">UPN "Veteran" Yogyakarta</span> dengan minat di bidang pengembangan web dan desain. Terampil dalam HTML, CSS, JavaScript, PHP, dan SQL, serta berpengalaman mengembangkan sistem informasi berbasis web seperti SIPAR.
             </p>
-            <p className="text-lg text-foreground/90 leading-relaxed">
+            <p className="text-lg text-foreground/90 leading-relaxed text-justify">
               Saya juga memiliki kemampuan desain menggunakan Canva dan CapCut untuk menciptakan tampilan yang menarik dan profesional. Saya percaya bahwa kombinasi keterampilan teknis dan desain dapat menciptakan pengalaman pengguna yang luar biasa.
             </p>
           </div>

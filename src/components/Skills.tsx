@@ -14,7 +14,7 @@ const skills = [
   {
     category: "Design",
     icon: Palette,
-    items: ["Canva", "CapCut"],
+    items: ["Canva", "CapCut", "Figma"],
   },
   {
     category: "Tools",
@@ -64,7 +64,7 @@ const Skills = () => {
             <div className="space-y-4">
               {[
                 { name: "HTML & CSS", level: 90 },
-                { name: "JavaScript", level: 85 },
+                { name: "JavaScript", level: 70 },
                 { name: "PHP", level: 80 },
                 { name: "SQL", level: 85 },
                 { name: "Design", level: 75 },

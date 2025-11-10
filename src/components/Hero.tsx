@@ -39,7 +39,7 @@ const Hero = () => {
             <span className="gradient-text">Winalfan Artensena Pamuji</span> 👋
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Web Developer & Designer
+            Enthusiastic About Continuous Learning and Growth
           </p>
           <Button
             size="lg"
