@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { X } from "lucide-react";
 import siparImage from "@/assets/project-sipar.jpg";
 import booksImage from "@/assets/project-books.jpg";
 import primasindoImage from "@/assets/project-primasindo.jpg";
@@ -44,6 +47,8 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
@@ -51,18 +56,26 @@ const Projects = () => {
           Proyek <span className="gradient-text">Saya</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Card 
               key={index} 
               className="glass-card overflow-hidden group hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
             >
-              <div className="relative overflow-hidden h-64">
+              <div 
+                className="relative overflow-hidden h-80 cursor-pointer"
+                onClick={() => setSelectedImage(project.image)}
+              >
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
+                    Klik untuk memperbesar
+                  </span>
+                </div>
               </div>
               
               <CardContent className="p-6">
@@ -86,6 +99,25 @@ const Projects = () => {
             </Card>
           ))}
         </div>
+
+        {/* Lightbox Dialog */}
+        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+          <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-none">
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 z-50 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+            >
+              <X className="text-white" size={24} />
+            </button>
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt="Preview"
+                className="w-full h-full object-contain"
+              />
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );

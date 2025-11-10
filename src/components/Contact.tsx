@@ -4,27 +4,27 @@ const Contact = () => {
   const socialLinks = [
     { 
       icon: Github, 
-      href: "https://github.com/arten", 
+      href: "https://github.com/rtensena", 
       label: "GitHub",
-      username: "@arten"
+      username: "@rtensena"
     },
     { 
       icon: Linkedin, 
-      href: "https://linkedin.com/in/arten", 
+      href: "https://www.linkedin.com/in/winalfan-artensena-pamuji-51aa18285", 
       label: "LinkedIn",
       username: "Winalfan Artensena Pamuji"
     },
     { 
       icon: Instagram, 
-      href: "https://instagram.com/arten", 
+      href: "https://instagram.com/winalfann", 
       label: "Instagram",
-      username: "@arten"
+      username: "@winalfann"
     },
     { 
       icon: Mail, 
-      href: "mailto:arten@example.com", 
+      href: "mailto:winalfann@gmail.com", 
       label: "Email",
-      username: "arten@example.com"
+      username: "winalfann@gmail.com"
     },
   ];
 
