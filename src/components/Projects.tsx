@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import siparImage from "@/assets/project-sipar.jpg";
 import booksImage from "@/assets/project-books.jpg";
-import coffeeImage from "@/assets/project-coffee.jpg";
-import portfolioImage from "@/assets/project-portfolio.jpg";
-import wasteImage from "@/assets/project-waste.jpg";
+import primasindoImage from "@/assets/project-primasindo.jpg";
+import sigYogyakartaImage from "@/assets/project-sig-yogyakarta.jpg";
+import greencycleImage from "@/assets/project-greencycle.jpg";
 
 const projects = [
   {
@@ -21,25 +21,25 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "MySQL"],
   },
   {
-    title: "Landing Page Kopi Nusantara",
+    title: "Website Primasindo",
     description:
-      "Desain landing page modern untuk promosi produk kopi lokal.",
-    image: coffeeImage,
-    tags: ["HTML", "CSS", "Design"],
+      "Proyek ini bernama Website Primasindo, yang saya buat sebagai bagian dari tugas mata kuliah Rekayasa Perangkat Lunak (RPL) pada semester lima tahun 2023. Website Primasindo berfungsi sebagai platform informasi untuk sebuah layanan psikologi bernama Primasindo. Website ini memuat berbagai elemen terkait bidang psikologi, seperti fitur pendaftaran sesi konseling dan halaman artikel yang berisi topik-topik psikologis. Selain itu, website ini dirancang agar dapat diakses oleh masyarakat luas yang ingin mengenal lebih jauh tentang Primasindo dan layanan yang disediakan.",
+    image: primasindoImage,
+    tags: ["HTML", "CSS", "PHP", "MySQL"],
   },
   {
-    title: "Portfolio V1 – Personal Website",
+    title: "Sistem Informasi Geografis - Yogyakarta",
     description:
-      "Versi pertama website portofolio dengan layout klasik dan responsif.",
-    image: portfolioImage,
-    tags: ["HTML", "CSS", "JavaScript"],
+      "Pada tahun 2023, saya mengembangkan Website Sistem Informasi Geografis (SIG) Pariwisata Yogyakarta sebagai bagian dari tugas mata kuliah Global Positioning System (GPS). Website ini bertujuan untuk memudahkan pengguna dalam mencari dan mengetahui informasi seputar tempat wisata yang ada di wilayah Daerah Istimewa Yogyakarta. Sistem ini menyajikan peta wisata interaktif yang menampilkan lokasi-lokasi wisata beserta informasi terkait seperti deskripsi dan sejarah singkat setiap destinasi. Melalui website ini, pengguna dapat dengan mudah mengakses informasi wisata secara praktis, kapan pun dan di mana pun, sehingga dapat membantu wisatawan dalam merencanakan kunjungan mereka ke berbagai tempat menarik di Yogyakarta.",
+    image: sigYogyakartaImage,
+    tags: ["Web GIS", "PHP", "MySQL", "JavaScript"],
   },
   {
-    title: "Sistem Pemetaan Tempat Sampah DIY (KKN)",
+    title: "GreenCycle - UI/UX Design",
     description:
-      "Website berbasis partisipatif untuk mendata lokasi tempat sampah di wilayah DIY.",
-    image: wasteImage,
-    tags: ["Web GIS", "PHP", "MySQL"],
+      "Pada semester 6, saya mengerjakan proyek GreenCycle sebagai tugas akhir mata kuliah UI/UX Design. Aplikasi ini dirancang untuk mempermudah proses daur ulang sampah dengan menghubungkan pengguna dan layanan pengelolaan sampah secara digital. GreenCycle memiliki tiga fitur utama, yaitu E-Wallet untuk mencatat saldo hasil daur ulang, Pick-Up untuk permintaan pengambilan sampah oleh petugas, dan Shop sebagai tempat pengguna menukarkan poin atau saldo dengan barang ramah lingkungan. Proyek ini berfokus pada pengalaman pengguna (User Experience) yang sederhana namun interaktif, serta antarmuka pengguna (User Interface) yang bersih dan mudah digunakan. Tujuan dari desain ini adalah untuk mendukung gaya hidup berkelanjutan dengan memanfaatkan teknologi dalam pengelolaan sampah yang lebih efisien dan modern.",
+    image: greencycleImage,
+    tags: ["UI/UX Design", "Figma", "Mobile App"],
   },
 ];
 
