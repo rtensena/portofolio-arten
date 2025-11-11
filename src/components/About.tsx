@@ -30,9 +30,12 @@ const About = () => {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              asChild
             >
-              <Download className="mr-2" size={20} />
-              Download CV
+              <a href="/CV-Winalfan_Artensena_Pamuji.pdf" download>
+                <Download className="mr-2" size={20} />
+                Download CV
+              </a>
             </Button>
             <Button
               size="lg"

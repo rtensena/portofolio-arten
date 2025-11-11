@@ -42,7 +42,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("home")}
             className="text-xl font-bold gradient-text"
           >
-            Arten
+            Portofolio
           </button>
 
           {/* Desktop Menu */}

@@ -82,7 +82,7 @@ const Projects = () => {
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed text-justify">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
